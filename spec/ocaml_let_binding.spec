@@ -99,3 +99,9 @@ let x = (1, begin 2 end, 3)
 let x = begin 1 end
 //      ^^^^^^^^^^^ meta.begin-end-group.ocaml
 //^^^^^^^^^^^^^^^^^ meta.let_binding.ocaml
+
+let%unit "such and such" = true
+//^^^^^^ keyword.other.function-definition.ocaml
+//       ^^^^^^^^^^^^^^^ meta.string.ocaml
+//                       ^ punctuation.separator.assignment.ocaml
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.let_binding.ocaml
